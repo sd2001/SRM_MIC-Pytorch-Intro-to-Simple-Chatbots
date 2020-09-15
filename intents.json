@@ -19,9 +19,9 @@
       },
       {"tag" : "name" ,
         "patterns": ["Whats name","Your Name","Ur Name","What should I call you"],
-        "responses":["I am MedBot",
-            "MedBot is my name",
-             "You can call me MedBot"]
+        "responses":["I am SRM",
+            "SRM is my name",
+             "You can call me SRM"]
       },
       {
         "tag": "goodbye",
@@ -54,8 +54,8 @@
 
         ],
         "responses": [
-          "Try taking the tests available, that will help you definitely",
-          "Consult Dr A, he'll help you out"
+          "Try visiting SRM Hospital, that will help you definitely :-)",
+          "Go to SRM Hospital :-), they'll help you out"
         ]
       },
       {
@@ -69,8 +69,44 @@
           "Medical help or assistance nearby"
         ],
         "responses": [
-          "Hi!Head over to the Nearby Page",
-          "Please go to the nearby page"
+          "SRM Hospital-One and Only",
+          "'THE' SRM Hospital"
+        ]
+      },
+      {
+        "tag": "foodie",
+        "patterns": [
+          "Show me nearby restaurants",
+          "Restaurants food",
+          "Food stores nearby",
+          "Food Courts nearby",
+          "Restaurants nearby",
+          "Coffee Shops",
+          "Tea Shops",
+          "Ice-Cream shops",
+          "Cake shops"
+        ],
+        "responses": [
+          "Java and OMR",
+          "Java / OMR / Google"
+        ]
+      },
+      {
+        "tag": "college",
+        "patterns": [
+          "Best College in India",
+          "Top Colleges",
+          "Best University",
+          "Btech University",
+          "Top Universities",
+          "Good private Colleges",
+          "Best Private Colleges",
+          "University private",
+          "Best deemed University"
+        ],
+        "responses": [
+          "#1 SRM University :-)",
+          "#1 SRM,KTR-'THE' Best :-)"
         ]
       },
       {
@@ -105,17 +141,18 @@
         ]
       },
       {
-        "tag": "shop names",
+        "tag": "movie",
         "patterns": [
-          "Show me nearby shops or pharmacies",
-          "Stores or medical shops",
-          "Shops nearby",
-          "Medical retailers nearby",
-          "Medicine nearby"
+          "Show me nearby movie halls",
+          "Best place to watch Movie",
+          "Top Movie places",
+          "Movie theatres",
+          "Cinema Halls nearby",
+          "Where to watch a movie",
+          "Theatre"
         ],
         "responses": [
-          "Hi! Head over to the Nearby Page",
-          "Please go to the nearby page"
+          "SRM Central Library"          
         ]
       },
       {

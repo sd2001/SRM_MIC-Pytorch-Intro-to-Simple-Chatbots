@@ -65,9 +65,9 @@ print(input_size, output_size)
 class ChatDataset(Dataset):
 
     def __init__(self):
-        self.n_samples = len(X_train)
-        self.x_data = X_train
-        self.y_data = y_train
+        self.n_samples=len(X_train)
+        self.x_data=X_train
+        self.y_data=y_train
 
     # support indexing such that dataset[i] can be used to get i-th sample
     def __getitem__(self, index):
@@ -77,8 +77,8 @@ class ChatDataset(Dataset):
     def __len__(self):
         return self.n_samples
 
-dataset = ChatDataset()
-train_loader = DataLoader(dataset=dataset,
+dataset=ChatDataset()
+train_loader=DataLoader(dataset=dataset,
                           batch_size=batch_size,
                           shuffle=True,
                           num_workers=0)
