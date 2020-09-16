@@ -4,7 +4,7 @@
 
 *Link to Ppt : https://docs.google.com/presentation/d/1bc0OkZayjrzXypdKRClnhJeXzJcWCJmtUBrqQsHOruI/edit?usp=sharing*
 
-*Link to Notebook basics : https://colab.research.google.com/drive/1rMi4kCGa2wa8nHe0O_q-K3WU-7zdQ8yv?usp=sharing*
+*Link to Notebook(NLP basics) : https://colab.research.google.com/drive/1rMi4kCGa2wa8nHe0O_q-K3WU-7zdQ8yv?usp=sharing*
 
 ![chatbot image](https://github.com/sd2001/SRM_MIC-Intro-to-Chatbots-and-NLP/blob/master/chatbot.png)
 
