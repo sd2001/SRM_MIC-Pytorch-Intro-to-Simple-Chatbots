@@ -17,35 +17,24 @@ with open('intents.json', 'r') as f:
 all_words=[]
 tags=[]
 together=[]
-#loop through each sentence in our intents patterns
 for intent in intents['intents']:
     tag=intent['tag']
     #add to tag list
     tags.append(tag)
     for pattern in intent['patterns']:
-        #tokenize each word in the sentence
         w=tokenize(pattern)
-        #add to our words list
         all_words.extend(w)
-        #add to together pair
         together.append((w, tag))
 
-#stem and lower each word
 ignore_words=['?','.','!',',',';','/']
 all_words=[stem(w) for w in all_words if w not in ignore_words]
-#remove duplicates and sort
 all_words=sorted(set(all_words))
 tags=sorted(set(tags))
 
-# print(len(together),"patterns")
-# print(len(tags),"tags:", tags)
-# print(len(all_words),"unique stemmed words:", all_words)
 
-# create training data
 X_train=[]
 y_train=[]
 for (pattern_sentence,tag) in together:
-    # X: bag of words for each pattern_sentence
     bag=bag_of_words(pattern_sentence, all_words)
     X_train.append(bag)
     label=tags.index(tag)
@@ -70,11 +59,10 @@ class CharDataset(Dataset):
         self.x_data=X_train
         self.y_data=y_train
 
-    # support indexing such that dataset[i] can be used to get i-th sample
     def __getitem__(self, index):
         return self.x_data[index],self.y_data[index]
 
-    # we can call len(dataset) to return the size
+
     def __len__(self):
         return self.n_samples
 
